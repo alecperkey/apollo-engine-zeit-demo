@@ -1,11 +1,11 @@
 {
   "scripts": {
-    "start": "nodemon .",
+    "start": "nodemon ./api",
     "now": "nodemon ."
   },
   "dependencies": {
-    "apollo-engine": "^1.0.1",
-    "graphql-yoga": "^1.10.0",
-    "nodemon": "^2.0.2"
+    "apollo-server": "^2.0.0-rc.5",
+    "graphql": "^0.13.2",
+    "nodemon": "^1.17.5"
   }
 }

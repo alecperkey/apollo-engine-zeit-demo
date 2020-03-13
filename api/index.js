@@ -77,3 +77,9 @@ if (process.env.ENGINE_API_KEY) {
     () => console.log(`Server is running on http://localhost:${port}`),
   )
 }
+
+exports.graphqlHandler = graphQLServer.createHandler();
+
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
